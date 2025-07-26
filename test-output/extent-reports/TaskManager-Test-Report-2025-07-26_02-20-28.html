@@ -1,0 +1,3276 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Task Manager E2E Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Task Manager Automation Results</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">samedi, juillet 26, 2025, 02:20 AM (WEST)</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">QAAutomationTeam</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Authentication</a><a class="dropdown-item" href="#">TaskManagement</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserRegistration</p>
+            <p class="text-sm">
+              <span>02:20:29</span> / <span>00:00:14:099</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserRegistration</h5>
+<span class='badge badge-success'>07.26.2025 02:20:29</span>
+<span class='badge badge-danger'>07.26.2025 02:20:43</span>
+<span class='badge badge-default'>00:00:14:099</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify successful user registration with unique credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:29</td>
+        <td>
+          Setting up test environment for: testUserRegistration
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:34</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:35</td>
+        <td>
+          Navigating to register page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:35</td>
+        <td>
+          Generated unique username: user1753492835718
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:35</td>
+        <td>
+          Generated unique email: user1753492835719@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:39</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:43</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserRegistration</p>
+            <p class="text-sm">
+              <span>02:20:35</span> / <span>00:00:04:193</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserRegistration</h5>
+<span class='badge badge-success'>07.26.2025 02:20:35</span>
+<span class='badge badge-danger'>07.26.2025 02:20:39</span>
+<span class='badge badge-default'>00:00:04:193</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify successful user registration with unique credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:35</td>
+        <td>
+          Test execution started: testUserRegistration
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:39</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:39</td>
+        <td>
+          Execution time: 4190ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:39</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testRegistrationSuccessMessage</p>
+            <p class="text-sm">
+              <span>02:20:43</span> / <span>00:00:05:052</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRegistrationSuccessMessage</h5>
+<span class='badge badge-success'>07.26.2025 02:20:43</span>
+<span class='badge badge-danger'>07.26.2025 02:20:48</span>
+<span class='badge badge-default'>00:00:05:052</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify registration success message is displayed</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:43</td>
+        <td>
+          Setting up test environment for: testRegistrationSuccessMessage
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:45</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:45</td>
+        <td>
+          Navigating to register page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:46</td>
+        <td>
+          Generated unique username: user1753492846208
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:46</td>
+        <td>
+          Generated unique email: user1753492846209@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:47</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:48</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRegistrationSuccessMessage</p>
+            <p class="text-sm">
+              <span>02:20:45</span> / <span>00:00:01:763</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRegistrationSuccessMessage</h5>
+<span class='badge badge-success'>07.26.2025 02:20:45</span>
+<span class='badge badge-danger'>07.26.2025 02:20:47</span>
+<span class='badge badge-default'>00:00:01:763</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify registration success message is displayed</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:45</td>
+        <td>
+          Test execution started: testRegistrationSuccessMessage
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:47</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:47</td>
+        <td>
+          Execution time: 1761ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:47</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testRegistrationWithShortPassword</p>
+            <p class="text-sm">
+              <span>02:20:48</span> / <span>00:00:03:433</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRegistrationWithShortPassword</h5>
+<span class='badge badge-success'>07.26.2025 02:20:48</span>
+<span class='badge badge-danger'>07.26.2025 02:20:51</span>
+<span class='badge badge-default'>00:00:03:433</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify registration fails with password less than 6 characters</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:48</td>
+        <td>
+          Setting up test environment for: testRegistrationWithShortPassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:49</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:50</td>
+        <td>
+          Navigating to register page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:50</td>
+        <td>
+          Generated unique username: user1753492850653
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:50</td>
+        <td>
+          Generated unique email: user1753492850653@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:51</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:51</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRegistrationWithShortPassword</p>
+            <p class="text-sm">
+              <span>02:20:50</span> / <span>00:00:01:257</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRegistrationWithShortPassword</h5>
+<span class='badge badge-success'>07.26.2025 02:20:50</span>
+<span class='badge badge-danger'>07.26.2025 02:20:51</span>
+<span class='badge badge-default'>00:00:01:257</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify registration fails with password less than 6 characters</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:50</td>
+        <td>
+          Test execution started: testRegistrationWithShortPassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:51</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:51</td>
+        <td>
+          Execution time: 1256ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:51</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testRegistrationWithExistingEmail</p>
+            <p class="text-sm">
+              <span>02:20:51</span> / <span>00:00:11:156</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRegistrationWithExistingEmail</h5>
+<span class='badge badge-success'>07.26.2025 02:20:51</span>
+<span class='badge badge-danger'>07.26.2025 02:21:02</span>
+<span class='badge badge-default'>00:00:11:156</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify registration fails with existing email address</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:51</td>
+        <td>
+          Setting up test environment for: testRegistrationWithExistingEmail
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:53</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:54</td>
+        <td>
+          Navigating to register page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:54</td>
+        <td>
+          Generated unique username: user1753492854469
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:55</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:02</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testRegistrationWithExistingEmail</p>
+            <p class="text-sm">
+              <span>02:20:54</span> / <span>00:00:01:662</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testRegistrationWithExistingEmail</h5>
+<span class='badge badge-success'>07.26.2025 02:20:54</span>
+<span class='badge badge-danger'>07.26.2025 02:20:55</span>
+<span class='badge badge-default'>00:00:01:662</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify registration fails with existing email address</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:54</td>
+        <td>
+          Test execution started: testRegistrationWithExistingEmail
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:55</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:20:55</td>
+        <td>
+          Execution time: 1661ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:20:55</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testSuccessfulLogin</p>
+            <p class="text-sm">
+              <span>02:21:02</span> / <span>00:00:07:187</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSuccessfulLogin</h5>
+<span class='badge badge-success'>07.26.2025 02:21:02</span>
+<span class='badge badge-danger'>07.26.2025 02:21:10</span>
+<span class='badge badge-default'>00:00:07:187</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify successful login with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:02</td>
+        <td>
+          Setting up test environment for: testSuccessfulLogin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:05</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:06</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:09</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:10</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSuccessfulLogin</p>
+            <p class="text-sm">
+              <span>02:21:06</span> / <span>00:00:02:622</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSuccessfulLogin</h5>
+<span class='badge badge-success'>07.26.2025 02:21:06</span>
+<span class='badge badge-danger'>07.26.2025 02:21:09</span>
+<span class='badge badge-default'>00:00:02:622</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify successful login with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:06</td>
+        <td>
+          Test execution started: testSuccessfulLogin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:09</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:09</td>
+        <td>
+          Execution time: 2620ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:09</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testLoginWithInvalidCredentials</p>
+            <p class="text-sm">
+              <span>02:21:10</span> / <span>00:00:05:607</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLoginWithInvalidCredentials</h5>
+<span class='badge badge-success'>07.26.2025 02:21:10</span>
+<span class='badge badge-danger'>07.26.2025 02:21:15</span>
+<span class='badge badge-default'>00:00:05:607</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify login fails with invalid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:10</td>
+        <td>
+          Setting up test environment for: testLoginWithInvalidCredentials
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:11</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:12</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:13</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:15</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testLoginWithInvalidCredentials</p>
+            <p class="text-sm">
+              <span>02:21:12</span> / <span>00:00:01:250</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLoginWithInvalidCredentials</h5>
+<span class='badge badge-success'>07.26.2025 02:21:12</span>
+<span class='badge badge-danger'>07.26.2025 02:21:13</span>
+<span class='badge badge-default'>00:00:01:250</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify login fails with invalid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:12</td>
+        <td>
+          Test execution started: testLoginWithInvalidCredentials
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:13</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:13</td>
+        <td>
+          Execution time: 1247ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:13</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserLogout</p>
+            <p class="text-sm">
+              <span>02:21:15</span> / <span>00:00:07:607</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserLogout</h5>
+<span class='badge badge-success'>07.26.2025 02:21:15</span>
+<span class='badge badge-danger'>07.26.2025 02:21:23</span>
+<span class='badge badge-default'>00:00:07:607</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify user can successfully logout</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:15</td>
+        <td>
+          Setting up test environment for: testUserLogout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:18</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:19</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:19</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:21</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:22</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:23</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserLogout</p>
+            <p class="text-sm">
+              <span>02:21:19</span> / <span>00:00:03:654</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserLogout</h5>
+<span class='badge badge-success'>07.26.2025 02:21:19</span>
+<span class='badge badge-danger'>07.26.2025 02:21:22</span>
+<span class='badge badge-default'>00:00:03:654</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify user can successfully logout</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:19</td>
+        <td>
+          Test execution started: testUserLogout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:22</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:22</td>
+        <td>
+          Execution time: 3652ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:22</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithValidData</p>
+            <p class="text-sm">
+              <span>02:21:23</span> / <span>00:00:09:078</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithValidData</h5>
+<span class='badge badge-success'>07.26.2025 02:21:23</span>
+<span class='badge badge-danger'>07.26.2025 02:21:32</span>
+<span class='badge badge-default'>00:00:09:078</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task creation with all required fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:23</td>
+        <td>
+          Setting up test environment for: testCreateTaskWithValidData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:25</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:26</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:26</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:28</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:31</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:32</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithValidData</p>
+            <p class="text-sm">
+              <span>02:21:28</span> / <span>00:00:02:533</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithValidData</h5>
+<span class='badge badge-success'>07.26.2025 02:21:28</span>
+<span class='badge badge-danger'>07.26.2025 02:21:31</span>
+<span class='badge badge-default'>00:00:02:533</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task creation with all required fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:28</td>
+        <td>
+          Test execution started: testCreateTaskWithValidData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:31</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:31</td>
+        <td>
+          Execution time: 2531ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:31</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testViewTaskDetails</p>
+            <p class="text-sm">
+              <span>02:21:32</span> / <span>00:00:08:025</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testViewTaskDetails</h5>
+<span class='badge badge-success'>07.26.2025 02:21:32</span>
+<span class='badge badge-danger'>07.26.2025 02:21:40</span>
+<span class='badge badge-default'>00:00:08:025</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task details are displayed correctly</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:32</td>
+        <td>
+          Setting up test environment for: testViewTaskDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:34</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:35</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:35</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:37</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>02:21:39</td>
+        <td>
+          Test failed. Screenshot captured.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:40</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testViewTaskDetails</p>
+            <p class="text-sm">
+              <span>02:21:37</span> / <span>00:00:02:003</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testViewTaskDetails</h5>
+<span class='badge badge-success'>07.26.2025 02:21:37</span>
+<span class='badge badge-danger'>07.26.2025 02:21:39</span>
+<span class='badge badge-default'>00:00:02:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task details are displayed correctly</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/testViewTaskDetails_1753492899692.png' src="../screenshots/testViewTaskDetails_1753492899692.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:37</td>
+        <td>
+          Test execution started: testViewTaskDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>02:21:39</td>
+        <td>
+          Test failed with exception: Task title should match expected [Detail Test 1753492897700] but found [Updated Task Title 1753475707221]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:39</td>
+        <td>
+          Execution time: 1739ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>02:21:39</td>
+        <td>
+          Test failed: Task title should match expected [Detail Test 1753492897700] but found [Updated Task Title 1753475707221]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testEditTaskDetails</p>
+            <p class="text-sm">
+              <span>02:21:40</span> / <span>00:00:07:600</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testEditTaskDetails</h5>
+<span class='badge badge-success'>07.26.2025 02:21:40</span>
+<span class='badge badge-danger'>07.26.2025 02:21:48</span>
+<span class='badge badge-default'>00:00:07:600</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task can be edited successfully</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:40</td>
+        <td>
+          Setting up test environment for: testEditTaskDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:42</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:43</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:43</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:45</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:47</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:48</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testEditTaskDetails</p>
+            <p class="text-sm">
+              <span>02:21:45</span> / <span>00:00:02:248</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testEditTaskDetails</h5>
+<span class='badge badge-success'>07.26.2025 02:21:45</span>
+<span class='badge badge-danger'>07.26.2025 02:21:47</span>
+<span class='badge badge-default'>00:00:02:248</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task can be edited successfully</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:45</td>
+        <td>
+          Test execution started: testEditTaskDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:47</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:47</td>
+        <td>
+          Execution time: 2247ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:47</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testToggleTaskCompletionStatus</p>
+            <p class="text-sm">
+              <span>02:21:48</span> / <span>00:00:06:176</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testToggleTaskCompletionStatus</h5>
+<span class='badge badge-success'>07.26.2025 02:21:48</span>
+<span class='badge badge-danger'>07.26.2025 02:21:54</span>
+<span class='badge badge-default'>00:00:06:176</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task completion status can be toggled</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:48</td>
+        <td>
+          Setting up test environment for: testToggleTaskCompletionStatus
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:49</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:50</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:50</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:52</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:54</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:54</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testToggleTaskCompletionStatus</p>
+            <p class="text-sm">
+              <span>02:21:52</span> / <span>00:00:01:666</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testToggleTaskCompletionStatus</h5>
+<span class='badge badge-success'>07.26.2025 02:21:52</span>
+<span class='badge badge-danger'>07.26.2025 02:21:54</span>
+<span class='badge badge-default'>00:00:01:666</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task completion status can be toggled</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:52</td>
+        <td>
+          Test execution started: testToggleTaskCompletionStatus
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:54</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:54</td>
+        <td>
+          Execution time: 1666ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:54</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testDeleteTask</p>
+            <p class="text-sm">
+              <span>02:21:54</span> / <span>00:00:08:225</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDeleteTask</h5>
+<span class='badge badge-success'>07.26.2025 02:21:54</span>
+<span class='badge badge-danger'>07.26.2025 02:22:02</span>
+<span class='badge badge-default'>00:00:08:225</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task can be deleted successfully</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:54</td>
+        <td>
+          Setting up test environment for: testDeleteTask
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:55</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:56</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:56</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:58</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:59</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:02</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testDeleteTask</p>
+            <p class="text-sm">
+              <span>02:21:58</span> / <span>00:00:01:382</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDeleteTask</h5>
+<span class='badge badge-success'>07.26.2025 02:21:58</span>
+<span class='badge badge-danger'>07.26.2025 02:21:59</span>
+<span class='badge badge-default'>00:00:01:382</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task can be deleted successfully</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:58</td>
+        <td>
+          Test execution started: testDeleteTask
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:59</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:21:59</td>
+        <td>
+          Execution time: 1380ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:21:59</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithEmptyTitle</p>
+            <p class="text-sm">
+              <span>02:22:02</span> / <span>00:00:08:092</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithEmptyTitle</h5>
+<span class='badge badge-success'>07.26.2025 02:22:02</span>
+<span class='badge badge-danger'>07.26.2025 02:22:10</span>
+<span class='badge badge-default'>00:00:08:092</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task creation fails with empty title</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:02</td>
+        <td>
+          Setting up test environment for: testCreateTaskWithEmptyTitle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:05</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:05</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:05</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:08</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:09</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:10</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithEmptyTitle</p>
+            <p class="text-sm">
+              <span>02:22:08</span> / <span>00:00:01:133</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithEmptyTitle</h5>
+<span class='badge badge-success'>07.26.2025 02:22:08</span>
+<span class='badge badge-danger'>07.26.2025 02:22:09</span>
+<span class='badge badge-default'>00:00:01:133</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task creation fails with empty title</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:08</td>
+        <td>
+          Test execution started: testCreateTaskWithEmptyTitle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:09</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:09</td>
+        <td>
+          Execution time: 1131ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:09</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithPastDueDate</p>
+            <p class="text-sm">
+              <span>02:22:10</span> / <span>00:00:06:268</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithPastDueDate</h5>
+<span class='badge badge-success'>07.26.2025 02:22:10</span>
+<span class='badge badge-danger'>07.26.2025 02:22:16</span>
+<span class='badge badge-default'>00:00:06:268</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task creation with past due date</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:10</td>
+        <td>
+          Setting up test environment for: testCreateTaskWithPastDueDate
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:12</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:12</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:12</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:15</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:16</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:16</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithPastDueDate</p>
+            <p class="text-sm">
+              <span>02:22:15</span> / <span>00:00:00:840</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithPastDueDate</h5>
+<span class='badge badge-success'>07.26.2025 02:22:15</span>
+<span class='badge badge-danger'>07.26.2025 02:22:16</span>
+<span class='badge badge-default'>00:00:00:840</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task creation with past due date</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:15</td>
+        <td>
+          Test execution started: testCreateTaskWithPastDueDate
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:16</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:16</td>
+        <td>
+          Execution time: 838ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:16</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithLongTitle</p>
+            <p class="text-sm">
+              <span>02:22:16</span> / <span>00:00:08:383</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithLongTitle</h5>
+<span class='badge badge-success'>07.26.2025 02:22:16</span>
+<span class='badge badge-danger'>07.26.2025 02:22:25</span>
+<span class='badge badge-default'>00:00:08:383</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task creation with very long title</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:16</td>
+        <td>
+          Setting up test environment for: testCreateTaskWithLongTitle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:19</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:19</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:19</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:22</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:24</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:25</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithLongTitle</p>
+            <p class="text-sm">
+              <span>02:22:22</span> / <span>00:00:02:354</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithLongTitle</h5>
+<span class='badge badge-success'>07.26.2025 02:22:22</span>
+<span class='badge badge-danger'>07.26.2025 02:22:24</span>
+<span class='badge badge-default'>00:00:02:354</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task creation with very long title</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:22</td>
+        <td>
+          Test execution started: testCreateTaskWithLongTitle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:24</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:24</td>
+        <td>
+          Execution time: 2352ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:24</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testSuccessfulLogin</p>
+            <p class="text-sm">
+              <span>02:22:25</span> / <span>00:00:05:232</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSuccessfulLogin</h5>
+<span class='badge badge-success'>07.26.2025 02:22:25</span>
+<span class='badge badge-danger'>07.26.2025 02:22:30</span>
+<span class='badge badge-default'>00:00:05:232</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify successful login with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:25</td>
+        <td>
+          Setting up test environment for: testSuccessfulLogin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:27</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:27</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:30</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:30</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testSuccessfulLogin</p>
+            <p class="text-sm">
+              <span>02:22:27</span> / <span>00:00:02:292</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testSuccessfulLogin</h5>
+<span class='badge badge-success'>07.26.2025 02:22:27</span>
+<span class='badge badge-danger'>07.26.2025 02:22:30</span>
+<span class='badge badge-default'>00:00:02:292</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify successful login with valid credentials</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:27</td>
+        <td>
+          Test execution started: testSuccessfulLogin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:30</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:30</td>
+        <td>
+          Execution time: 2290ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:30</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserLogout</p>
+            <p class="text-sm">
+              <span>02:22:30</span> / <span>00:00:06:495</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserLogout</h5>
+<span class='badge badge-success'>07.26.2025 02:22:30</span>
+<span class='badge badge-danger'>07.26.2025 02:22:37</span>
+<span class='badge badge-default'>00:00:06:495</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify user can successfully logout</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:30</td>
+        <td>
+          Setting up test environment for: testUserLogout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:32</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:33</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:33</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:35</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:36</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:37</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author="QAAutomationTeam"
+          tag="Authentication"
+          device="">
+          <div class="test-detail">
+            <p class="name">testUserLogout</p>
+            <p class="text-sm">
+              <span>02:22:33</span> / <span>00:00:03:348</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testUserLogout</h5>
+<span class='badge badge-success'>07.26.2025 02:22:33</span>
+<span class='badge badge-danger'>07.26.2025 02:22:36</span>
+<span class='badge badge-default'>00:00:03:348</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">Authentication</span></div>
+<div class="m-t-10 m-l-5">Verify user can successfully logout</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:33</td>
+        <td>
+          Test execution started: testUserLogout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:36</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:36</td>
+        <td>
+          Execution time: 3348ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:36</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithValidData</p>
+            <p class="text-sm">
+              <span>02:22:37</span> / <span>00:00:07:168</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithValidData</h5>
+<span class='badge badge-success'>07.26.2025 02:22:37</span>
+<span class='badge badge-danger'>07.26.2025 02:22:44</span>
+<span class='badge badge-default'>00:00:07:168</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify task creation with all required fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:37</td>
+        <td>
+          Setting up test environment for: testCreateTaskWithValidData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:39</td>
+        <td>
+          Navigating to base URL: https://cs-qa-test-commonshare-14f55a8d.koyeb.app
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:40</td>
+        <td>
+          Logging in as valid user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:40</td>
+        <td>
+          Navigating to login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:42</td>
+        <td>
+          Successfully logged in and navigated to dashboard
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:43</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:44</td>
+        <td>
+          Browser closed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author="QAAutomationTeam"
+          tag="TaskManagement"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateTaskWithValidData</p>
+            <p class="text-sm">
+              <span>02:22:42</span> / <span>00:00:01:489</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateTaskWithValidData</h5>
+<span class='badge badge-success'>07.26.2025 02:22:42</span>
+<span class='badge badge-danger'>07.26.2025 02:22:43</span>
+<span class='badge badge-default'>00:00:01:489</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QAAutomationTeam</span>
+<span class="badge badge-pill badge-default">TaskManagement</span></div>
+<div class="m-t-10 m-l-5">Verify task creation with all required fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:42</td>
+        <td>
+          Test execution started: testCreateTaskWithValidData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:43</td>
+        <td>
+          Test completed successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:22:43</td>
+        <td>
+          Execution time: 1489ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:22:43</td>
+        <td>
+          Test passed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">Authentication</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Authentication</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:35 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testUserRegistration</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testRegistrationSuccessMessage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>testRegistrationWithShortPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>testRegistrationWithExistingEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>testSuccessfulLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>testLoginWithInvalidCredentials</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>testUserLogout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testSuccessfulLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>testUserLogout</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">TaskManagement</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>TaskManagement</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testCreateTaskWithValidData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>02:21:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>testViewTaskDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>testEditTaskDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testToggleTaskCompletionStatus</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>testDeleteTask</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>testCreateTaskWithEmptyTitle</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>testCreateTaskWithPastDueDate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>testCreateTaskWithLongTitle</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>testCreateTaskWithValidData</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>17</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">QAAutomationTeam</p>
+<p class="duration text-sm">18 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>QAAutomationTeam</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:35 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testUserRegistration</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testRegistrationSuccessMessage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>testRegistrationWithShortPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:20:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>testRegistrationWithExistingEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>testSuccessfulLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>testLoginWithInvalidCredentials</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>testUserLogout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testCreateTaskWithValidData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>02:21:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>testViewTaskDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>testEditTaskDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testToggleTaskCompletionStatus</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:21:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>testDeleteTask</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>testCreateTaskWithEmptyTitle</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>testCreateTaskWithPastDueDate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>testCreateTaskWithLongTitle</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testSuccessfulLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>testUserLogout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>02:22:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>testCreateTaskWithValidData</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>samedi, juillet 26, 2025, 02:20 AM (WEST)</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>samedi, juillet 26, 2025, 02:22 AM (WEST)</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>34</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'>
+<b>34</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='5%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='32%'><b>62</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>3</b> events failed,
+<b data-tooltip='%'>126</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testUserRegistration":14.099,"testUserRegistration":4.193,"testRegistrationSuccessMessage":5.052,"testRegistrationSuccessMessage":1.763,"testRegistrationWithShortPassword":3.433,"testRegistrationWithShortPassword":1.257,"testRegistrationWithExistingEmail":11.156,"testRegistrationWithExistingEmail":1.662,"testSuccessfulLogin":7.187,"testSuccessfulLogin":2.622,"testLoginWithInvalidCredentials":5.607,"testLoginWithInvalidCredentials":1.25,"testUserLogout":7.607,"testUserLogout":3.654,"testCreateTaskWithValidData":9.078,"testCreateTaskWithValidData":2.533,"testViewTaskDetails":8.025,"testViewTaskDetails":2.003,"testEditTaskDetails":7.6,"testEditTaskDetails":2.248,"testToggleTaskCompletionStatus":6.176,"testToggleTaskCompletionStatus":1.666,"testDeleteTask":8.225,"testDeleteTask":1.382,"testCreateTaskWithEmptyTitle":8.092,"testCreateTaskWithEmptyTitle":1.133,"testCreateTaskWithPastDueDate":6.268,"testCreateTaskWithPastDueDate":0.84,"testCreateTaskWithLongTitle":8.383,"testCreateTaskWithLongTitle":2.354,"testSuccessfulLogin":5.232,"testSuccessfulLogin":2.292,"testUserLogout":6.495,"testUserLogout":3.348,"testCreateTaskWithValidData":7.168,"testCreateTaskWithValidData":1.489
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>QAAutomationTeam</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>94,444%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Authentication</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>TaskManagement</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>88,889%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>Task Manager</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA Test Environment</td>
+</tr>
+<tr>
+<td>Base URL</td>
+<td>https://cs-qa-test-commonshare-14f55a8d.koyeb.app</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Chrome</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>17.0.10</td>
+</tr>
+<tr>
+<td>Executed By</td>
+<td>HAMZA</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 34,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 62,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 126
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

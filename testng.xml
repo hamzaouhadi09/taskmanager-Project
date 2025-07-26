@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TaskManagerTestSuite" verbose="1" parallel="false">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="environment" value="qa"/>
+
+    <listeners>
+        <listener class-name="com.hamza.utils.ExtentTestListener"/>
+    </listeners>
+
+    <!-- Authentication Tests -->
+    <test name="AuthenticationTests" preserve-order="true">
+        <parameter name="testType" value="authentication"/>
+        <classes>
+            <class name="com.hamza.taskmanager.AuthTests">
+                <methods>
+                    <include name="testUserRegistration"/>
+                    <include name="testRegistrationSuccessMessage"/>
+                    <include name="testRegistrationWithShortPassword"/>
+                    <include name="testRegistrationWithExistingEmail"/>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testLoginWithInvalidCredentials"/>
+                    <include name="testUserLogout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Task Management Tests -->
+    <test name="TaskManagementTests" preserve-order="true">
+        <parameter name="testType" value="task-management"/>
+        <classes>
+            <class name="com.hamza.taskmanager.TaskTests">
+                <methods>
+                    <include name="testCreateTaskWithValidData"/>
+                    <include name="testViewTaskDetails"/>
+                    <include name="testEditTaskDetails"/>
+                    <include name="testToggleTaskCompletionStatus"/>
+                    <include name="testDeleteTask"/>
+                    <include name="testCreateTaskWithEmptyTitle"/>
+                    <include name="testCreateTaskWithPastDueDate"/>
+                    <include name="testCreateTaskWithLongTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Smoke Test Suite (Critical Path) -->
+    <test name="SmokeTests" preserve-order="true">
+        <parameter name="testType" value="smoke"/>
+        <classes>
+            <class name="com.hamza.taskmanager.AuthTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testUserLogout"/>
+                </methods>
+            </class>
+            <class name="com.hamza.taskmanager.TaskTests">
+                <methods>
+                    <include name="testCreateTaskWithValidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
