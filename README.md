@@ -70,8 +70,8 @@ src/
 
 1. **Clone the repository**
    bash
-   git clone https://github.com/yourusername/task-manager-automation.git
-   cd task-manager-automation
+   git clone https://github.com/hamzaouhadi09/taskmanager-Project
+   cd taskmanager-Project
    
 
 2. **Install dependencies**
