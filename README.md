@@ -69,21 +69,16 @@ src/
 ### Installation Steps
 
 1. **Clone the repository**
-   ```bash
+   bash
    git clone https://github.com/yourusername/task-manager-automation.git
    cd task-manager-automation
-   ```
+   
 
 2. **Install dependencies**
-   ```bash
+    bash
    mvn clean install
-   ```
-
-3. **Configure test environment**
-   - Update `BaseTest.java` with your application URLs
-   - Configure test user credentials in `BaseTest.java`
-
-4. **Run tests**
-   ```bash
+   
+3. **Run tests**
+    bash
    # Run all tests
    mvn test
