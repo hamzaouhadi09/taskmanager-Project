@@ -2,7 +2,7 @@
 
 A comprehensive Selenium WebDriver test automation framework for testing a task management web application. This project uses Java, TestNG, and follows the Page Object Model (POM) design pattern.
 
-## 🚀 Project Overview
+## Project Overview
 
 This test automation framework covers end-to-end testing of a task management application including:
 - User authentication (registration, login, logout)
@@ -24,6 +24,7 @@ This test automation framework covers end-to-end testing of a task management ap
 
 ```
 src/
+├── screenshots/     
 ├── main/java/
 │   └── com/taskmanager/pages/
 │       ├── LoginPage.java          # Login page object
@@ -31,13 +32,22 @@ src/
 │       ├── DashboardPage.java      # Dashboard page object
 │       └── TaskPage.java           # Task management page object
 └── test/java/
-    └── com/hamza/taskmanager/
-        ├── BaseTest.java           # Base test configuration
-        ├── AuthTests.java          # Authentication test cases
-        └── TaskTests.java          # Task management test cases
+|    └── com/hamza/taskmanager/
+|        ├── BaseTest.java           # Base test configuration
+|        ├── AuthTests.java          # Authentication test cases
+|        └── TaskTests.java          # Task management test cases
+│           └── utils/
+│               ├── ExtentReportManager.java    # Gestionnaire des rapports Extent
+│               ├── ExtentTestListener.java     # Listener pour les rapports
+│               └── ScreenshotUtils.java        # Utilitaires pour les captures d'écran
+|
+├── pom.xml                         # Configuration Maven
+├── testng.xml                      # Configuration TestNG
 
 
-## 🧪 Test Coverage
+
+
+##  Test Coverage
 
 ### Authentication Tests (`AuthTests.java`)
 - ✅ User registration with valid credentials
