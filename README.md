@@ -39,7 +39,7 @@ src/
 │           └── utils/
 │               ├── ExtentReportManager.java    # Gestionnaire des rapports Extent
 │               ├── ExtentTestListener.java     # Listener pour les rapports
-│               └── ScreenshotUtils.java        # Utilitaires pour les captures d'écran
+│        
 |
 ├── pom.xml                         # Configuration Maven
 ├── testng.xml                      # Configuration TestNG
